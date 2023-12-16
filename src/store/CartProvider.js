@@ -9,7 +9,7 @@ const CartProvider = (props) => {
         setItems([...items, data])
     };
     const addToCartHandler = (item) => {
-        setCartItems({...item})
+        setCartItems([...cartItems, item])
     }
     const contextProvider = {
         items: items,

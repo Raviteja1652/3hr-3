@@ -6,7 +6,7 @@ const Cart = () => {
     const ctx = useContext(cartContext)
     const cartItems = (
         <ul className="cart">
-            {ctx.items.map(item => (
+            {ctx.itemsCart.map(item => (
                 <li key={item.id}>
                     {item.name} - {item.desc} - {item.price}
                     
